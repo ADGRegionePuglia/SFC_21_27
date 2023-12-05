@@ -2545,7 +2545,7 @@
             formcontrolname="importoCoFinanziamento"
             class="mat-mdc-input-element ng-tns-c57-228 ng-untouched ng-pristine mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored ui-groups"
             disabled=""
-            id="importo_totale"
+            id=""
             ui-group="importo_totale"
             aria-invalid="false"
             aria-required="false"
@@ -10551,7 +10551,7 @@ semestri
         if(cof_intervento.value==="1" && cof_attivo.value==="") errori.push("Specificare lo stato del cofinanziamento");
         if((cof_attivo.value==="1" || cof_attivo.value==="3") && estremi_cof.value==="") errori.push("Specificare gli estremi del cofinanziamento");
 
-        if(parseFloat(document.getElementById("importoRichiestoFinanziamentoFsc").value) !== parseFloat(parseFloat(document.getElementById("costoTotaleIntervento").value) + parseFloat(importo_totale.value))) errori.push("L'importo richiesto a finanziamento non corrisponde alle cifre inserite");
+        if(parseFloat(document.getElementById("importoRichiestoFinanziamentoFsc").value) !== parseFloat(parseFloat(document.getElementById("costoTotaleIntervento").value) + parseFloat(document.getElementById("importo_totale").value))) errori.push("L'importo richiesto a finanziamento non corrisponde alle cifre inserite");
 
         //red
         if (tipo_intervento.value==="1")
