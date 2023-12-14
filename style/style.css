@@ -6758,8 +6758,8 @@ fieldset legend{background-color:transparent;font-weight:700;line-height:calc(2.
 .form-group .form-text.small,.form-group small.form-text{margin:0;padding:.25rem .5rem;font-size:.777rem}
 .form-group input[type=time]~label{transform:translateY(-75%);font-size:.777rem}
 ::placeholder{font-weight:600;color:#5d7083}
-input[type=date],input[type=datetime-local],input[type=email],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=time],input[type=url],textarea{border:none;border-bottom:1px solid #5d7083;border-radius:0;padding:.375rem .5rem;outline:0;height:2.5rem;width:100%;box-shadow:none;transition:none;font-weight:700;-webkit-appearance:none;-webkit-border-radius:0}
-input[type=date]::placeholder,input[type=datetime-local]::placeholder,input[type=email]::placeholder,input[type=number]::placeholder,input[type=password]::placeholder,input[type=search]::placeholder,input[type=tel]::placeholder,input[type=text]::placeholder,input[type=time]::placeholder,input[type=url]::placeholder,textarea::placeholder{color:#5d7083;font-weight:600}
+input[type=date],input[type=datetime-local],input[type=email],input[type=password],input[type=search],input[type=tel],input[type=time],input[type=url],textarea{border:none;border-bottom:1px solid #5d7083;border-radius:0;padding:.375rem .5rem;outline:0;height:2.5rem;width:100%;box-shadow:none;transition:none;font-weight:700;-webkit-appearance:none;-webkit-border-radius:0}
+input[type=date]::placeholder,input[type=datetime-local]::placeholder,input[type=email]::placeholder,input[type=number]::placeholder,input[type=password]::placeholder,input[type=search]::placeholder,input[type=tel]::placeholder,input[type=time]::placeholder,input[type=url]::placeholder,textarea::placeholder{color:#5d7083;font-weight:600}
 textarea{border:1px solid #5d7083;height:auto}
 .form-control{background-position:center right!important;background-repeat:no-repeat!important;background-size:45px 45%!important}
 .form-control:disabled,.form-control[readonly]{cursor:not-allowed}
@@ -9637,3 +9637,5 @@ app-table-text-filter{width:100%!important}
 .mdc-checkbox .mdc-checkbox__focus-ring{display:none}
 }
 .mdc-form-field{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:var(--mdc-typography-body2-font-family, var(--mdc-typography-font-family, Roboto, sans-serif));font-size:var(--mdc-typography-body2-font-size, 14px);line-height:var(--mdc-typography-body2-line-height, 20px);font-weight:var(--mdc-typography-body2-font-weight,400);letter-spacing:var(--mdc-typography-body2-letter-spacing, .0178571429em);-webkit-text-decoration:var(--mdc-typography-body2-text-decoration,inherit);text-decoration:var(--mdc-typography-body2-text-decoration,inherit);text-transform:var(--mdc-typography-body2-text-transform,none)}
+.txtar{min-height: 350px;border: 2px solid #ddd;font-size: 12px;}
+.txtar:focus{border: 2px solid #ddd !important}
