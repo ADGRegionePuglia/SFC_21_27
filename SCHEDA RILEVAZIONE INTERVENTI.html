@@ -9105,7 +9105,7 @@ semestri
             <div>
                 <p>Se hai compilato tutti i campi della scheda potrai procedere con il download.</p>
             </div>
-            <div class="d-flex justify-content-center mt-4"><button itbutton="primary" class="btn btn-primary" onclick="stampa()">Controlla e Scarica Scheda</button></div>
+            <div class="d-flex justify-content-center mt-4"><button itbutton="primary" class="btn btn-primary" onclick="stampa()" type="button">Controlla e Scarica Scheda</button></div>
             <div  style="margin-top:24px;">
                 <p>Premendo il tasto controlla compariranno di seguito i campi obbligatori che non hai correttamente compilato.</p>
             </div>
@@ -10642,16 +10642,17 @@ semestri
         let id_value=value.split("=");
         if(id_value[0].startsWith('regione') && id_value[0]!=="regione1") addLocalizzazione();
         let elem = document.getElementById(id_value[0]);
+        let decoded_value = decodeURIComponent(id_value[1]);
         switch(elem.tagName) {
 
             case "SELECT":
-                $("#"+id_value[0]).val(id_value[1]);
+                $("#"+id_value[0]).val(decoded_value);
                 $("#"+id_value[0])[0].dispatchEvent(new Event('change'));
                 break;
             case "INPUT":
                 if(elem.getAttribute("type") === "checkbox")
                 {
-                    if(id_value[1]==="on")
+                    if(decoded_value==="on")
                     {
                         $("#"+id_value[0]).prop( "checked", true );
                         $("#"+id_value[0])[0].dispatchEvent(new Event('change'));
@@ -10659,12 +10660,12 @@ semestri
                 }
                 else
                 {
-                    $("#"+id_value[0]).val(id_value[1]);
+                    $("#"+id_value[0]).val(decoded_value);
                     $("#"+id_value[0])[0].dispatchEvent(new Event('input'));
                 }
                 break;
             case "TEXTAREA":
-                $("#"+id_value[0]).val(id_value[1]);
+                $("#"+id_value[0]).val(decoded_value);
                 $("#"+id_value[0])[0].dispatchEvent(new Event('input'));
                 break;
             default:
