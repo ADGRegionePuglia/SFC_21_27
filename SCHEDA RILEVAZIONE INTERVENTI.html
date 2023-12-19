@@ -10691,6 +10691,7 @@ semestri
             n_import = 1;
             let ser = $('#txt-import').val();
             if (ser.charCodeAt(0) === 0xFEFF) ser = ser.substr(1);
+            if (ser.startsWith("o;?")) ser = ser.substr(3);
             ser=atob(ser);
             ser = ser.split("&");
             for (var i = 0; i < ser.length; i++) {
