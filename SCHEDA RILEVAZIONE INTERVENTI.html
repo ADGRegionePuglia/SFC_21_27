@@ -7248,6 +7248,75 @@ class="mat-mdc-form-field ng-tns-c57-487 mat-mdc-form-field-type-mat-input mat-m
     </mat-checkbox>
 </li>
 
+<li class="ng-star-inserted" style="margin-top: 30px;">
+    <p>Verificato</p>
+    <mat-checkbox class="mat-mdc-checkbox mat-mdc-checkbox-disabled mdc-checkbox--disabled col-12 mat-accent ng-untouched ng-pristine ng-valid ng-star-inserted" id="mat-mdc-checkbox-810">
+        <div class="mdc-form-field">
+            <div class="mdc-checkbox">
+                <div class="mat-mdc-checkbox-touch-target"></div>
+                <input autocomplete="off" type="checkbox" class="mdc-checkbox__native-control" id="mat-mdc-checkbox-810-input" name="mat-mdc-checkbox-810-input" tabindex="0" aria-checked="false" disabled />
+                <div class="mdc-checkbox__ripple"></div>
+                <div class="mdc-checkbox__background">
+                    <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" class="mdc-checkbox__checkmark"><path fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" class="mdc-checkbox__checkmark-path"></path></svg>
+                    <div class="mdc-checkbox__mixedmark"></div>
+                </div>
+                <div mat-ripple="" class="mat-ripple mat-mdc-checkbox-ripple mat-mdc-focus-indicator"></div>
+            </div>
+            <label for="mat-mdc-checkbox-810-input"> SI</label>
+        </div>
+    </mat-checkbox>
+    <mat-checkbox class="mat-mdc-checkbox mat-mdc-checkbox-disabled mdc-checkbox--disabled col-12 mat-accent ng-untouched ng-pristine ng-valid ng-star-inserted" id="mat-mdc-checkbox-811">
+        <div class="mdc-form-field">
+            <div class="mdc-checkbox">
+                <div class="mat-mdc-checkbox-touch-target"></div>
+                <input autocomplete="off" type="checkbox" class="mdc-checkbox__native-control" id="mat-mdc-checkbox-811-input" name="mat-mdc-checkbox-811-input" tabindex="0" aria-checked="false" disabled />
+                <div class="mdc-checkbox__ripple"></div>
+                <div class="mdc-checkbox__background">
+                    <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" class="mdc-checkbox__checkmark"><path fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" class="mdc-checkbox__checkmark-path"></path></svg>
+                    <div class="mdc-checkbox__mixedmark"></div>
+                </div>
+                <div mat-ripple="" class="mat-ripple mat-mdc-checkbox-ripple mat-mdc-focus-indicator"></div>
+            </div>
+            <label for="mat-mdc-checkbox-811-input"> NO</label>
+        </div>
+    </mat-checkbox>
+</li>
+
+
+<li class="ng-star-inserted" style="margin-top: 30px;">
+    <p>Validato</p>
+    <mat-checkbox class="mat-mdc-checkbox mat-mdc-checkbox-disabled mdc-checkbox--disabled col-12 mat-accent ng-untouched ng-pristine ng-valid ng-star-inserted" id="mat-mdc-checkbox-812">
+        <div class="mdc-form-field">
+            <div class="mdc-checkbox">
+                <div class="mat-mdc-checkbox-touch-target"></div>
+                <input autocomplete="off" type="checkbox" class="mdc-checkbox__native-control" id="mat-mdc-checkbox-812-input" name="mat-mdc-checkbox-812-input" tabindex="0" aria-checked="false" disabled />
+                <div class="mdc-checkbox__ripple"></div>
+                <div class="mdc-checkbox__background">
+                    <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" class="mdc-checkbox__checkmark"><path fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" class="mdc-checkbox__checkmark-path"></path></svg>
+                    <div class="mdc-checkbox__mixedmark"></div>
+                </div>
+                <div mat-ripple="" class="mat-ripple mat-mdc-checkbox-ripple mat-mdc-focus-indicator"></div>
+            </div>
+            <label for="mat-mdc-checkbox-812-input"> SI</label>
+        </div>
+    </mat-checkbox>
+    <mat-checkbox class="mat-mdc-checkbox mat-mdc-checkbox-disabled mdc-checkbox--disabled col-12 mat-accent ng-untouched ng-pristine ng-valid ng-star-inserted" id="mat-mdc-checkbox-813">
+        <div class="mdc-form-field">
+            <div class="mdc-checkbox">
+                <div class="mat-mdc-checkbox-touch-target"></div>
+                <input autocomplete="off" type="checkbox" class="mdc-checkbox__native-control" id="mat-mdc-checkbox-813-input" name="mat-mdc-checkbox-813-input" tabindex="0" aria-checked="false" disabled />
+                <div class="mdc-checkbox__ripple"></div>
+                <div class="mdc-checkbox__background">
+                    <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" class="mdc-checkbox__checkmark"><path fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" class="mdc-checkbox__checkmark-path"></path></svg>
+                    <div class="mdc-checkbox__mixedmark"></div>
+                </div>
+                <div mat-ripple="" class="mat-ripple mat-mdc-checkbox-ripple mat-mdc-focus-indicator"></div>
+            </div>
+            <label for="mat-mdc-checkbox-813-input"> NO</label>
+        </div>
+    </mat-checkbox>
+</li>
+
 
 </div>
 
@@ -9933,19 +10002,137 @@ semestri
         input_244_length.innerHTML = input_244.value.length + " / 350";
     });
 
+    let check_706 = document.getElementById("mat-mdc-checkbox-706-input");
+    let check_707 = document.getElementById("mat-mdc-checkbox-707-input");
+    let check_708 = document.getElementById("mat-mdc-checkbox-708-input");
+    let check_709 = document.getElementById("mat-mdc-checkbox-709-input");
 
+    let check_810 = document.getElementById("mat-mdc-checkbox-810-input");
+    let check_811 = document.getElementById("mat-mdc-checkbox-811-input");
+    let check_812 = document.getElementById("mat-mdc-checkbox-812-input");
+    let check_813 = document.getElementById("mat-mdc-checkbox-813-input");
+    let check_81va = [check_810,check_811];
+    let check_81vb = [check_812,check_813];
+
+
+    check_810.addEventListener("change", (changed) =>{
+        if(changed.target.checked)
+        {
+            check_811.checked=false;
+            check_811.disabled=true;
+            check_811.parentNode.parentNode.parentNode.classList.add("mat-mdc-checkbox-disabled");
+            check_811.parentNode.parentNode.parentNode.classList.add("mdc-checkbox--disabled");
+            for (var i = check_81vb.length - 1; i >= 0; i--) {
+                check_81vb[i].disabled=false;
+                check_81vb[i].parentNode.parentNode.parentNode.classList.remove("mat-mdc-checkbox-disabled");
+                check_81vb[i].parentNode.parentNode.parentNode.classList.remove("mdc-checkbox--disabled");
+            }
+        }
+        else
+        {
+            check_811.disabled=false;
+            check_811.parentNode.parentNode.parentNode.classList.remove("mat-mdc-checkbox-disabled");
+            check_811.parentNode.parentNode.parentNode.classList.remove("mdc-checkbox--disabled");
+            for (var i = check_81vb.length - 1; i >= 0; i--) {
+                check_81vb[i].checked=false;
+                check_81vb[i].disabled=true;
+                check_81vb[i].parentNode.parentNode.parentNode.classList.add("mat-mdc-checkbox-disabled");
+                check_81vb[i].parentNode.parentNode.parentNode.classList.add("mdc-checkbox--disabled");
+            }
+        }
+    });
+
+    check_811.addEventListener("change", (changed) =>{
+        if(changed.target.checked)
+        {
+            check_810.checked=false;
+            check_810.disabled=true;
+            check_810.parentNode.parentNode.parentNode.classList.add("mat-mdc-checkbox-disabled");
+            check_810.parentNode.parentNode.parentNode.classList.add("mdc-checkbox--disabled");
+        }
+        else
+        {
+            check_810.disabled=false;
+            check_810.parentNode.parentNode.parentNode.classList.remove("mat-mdc-checkbox-disabled");
+            check_810.parentNode.parentNode.parentNode.classList.remove("mdc-checkbox--disabled");
+        }
+    });
+
+    check_812.addEventListener("change", (changed) =>{
+        if(changed.target.checked)
+        {
+            check_813.checked=false;
+            check_813.disabled=true;
+            check_813.parentNode.parentNode.parentNode.classList.add("mat-mdc-checkbox-disabled");
+            check_813.parentNode.parentNode.parentNode.classList.add("mdc-checkbox--disabled");
+        }
+        else
+        {
+            check_813.disabled=false;
+            check_813.parentNode.parentNode.parentNode.classList.remove("mat-mdc-checkbox-disabled");
+            check_813.parentNode.parentNode.parentNode.classList.remove("mdc-checkbox--disabled");
+        }
+    });
+
+    check_813.addEventListener("change", (changed) =>{
+        if(changed.target.checked)
+        {
+            check_812.checked=false;
+            check_812.disabled=true;
+            check_812.parentNode.parentNode.parentNode.classList.add("mat-mdc-checkbox-disabled");
+            check_812.parentNode.parentNode.parentNode.classList.add("mdc-checkbox--disabled");
+        }
+        else
+        {
+            check_812.disabled=false;
+            check_812.parentNode.parentNode.parentNode.classList.remove("mat-mdc-checkbox-disabled");
+            check_812.parentNode.parentNode.parentNode.classList.remove("mdc-checkbox--disabled");
+        }
+    });
 
     function toggle_check(self)
     {
-        const i = self.getAttribute("dynamic_check_i");
-        //const y = self.getAttribute("dynamic_check_y");
+        const i = parseInt(self.getAttribute("dynamic_check_i"));
+        const y = parseInt(self.getAttribute("dynamic_check_y"));
         for (var z = 0; z < check_all[i].length; z++) {
             if (check_all[i][z]!==self) {
                 check_all[i][z].disabled = self.checked;
                 check_all[i][z].parentNode.parentNode.parentNode.classList.toggle("mat-mdc-checkbox-disabled");
             }
         }
+
+        if (i===10)
+        {
+            if (y>=4 && y<=7)
+            {  
+                if (self.checked)
+                {
+                    for (var z = 0; z < check_81va.length; z++) {
+                        check_81va[z].disabled = false;
+                        check_81va[z].parentNode.parentNode.parentNode.classList.remove("mat-mdc-checkbox-disabled");
+                        check_81va[z].parentNode.parentNode.parentNode.classList.remove("mdc-checkbox--disabled");
+                    }
+                }
+                else
+                {
+                    for (var z = 0; z < check_81va.length; z++) {
+                    check_81va[z].disabled = true;
+                    check_81va[z].checked = false;
+                    check_81va[z].parentNode.parentNode.parentNode.classList.add("mat-mdc-checkbox-disabled");
+                    check_81va[z].parentNode.parentNode.parentNode.classList.add("mdc-checkbox--disabled");
+                    }  
+                    for (var z = 0; z < check_81vb.length; z++) {
+                    check_81vb[z].disabled = true;
+                    check_81vb[z].checked = false;
+                    check_81vb[z].parentNode.parentNode.parentNode.classList.add("mat-mdc-checkbox-disabled");
+                    check_81vb[z].parentNode.parentNode.parentNode.classList.add("mdc-checkbox--disabled");
+                    }  
+
+                }
+            }
+        }
     }
+
     let check_269 = document.getElementById("mat-mdc-checkbox-269-input");
     let check_270 = document.getElementById("mat-mdc-checkbox-270-input");
     let check_26x = [check_269,check_270];
@@ -10582,6 +10769,14 @@ semestri
             if(check_ec50[2].checked && !controlla_gruppo_checkbox(check_69a)) errori.push("Specificare se in house");
 
             if(!controlla_gruppo_checkbox(check_70x)) errori.push("Specificare stato di avanzamento della programmazione e progettazione");
+            if(check_706.checked || check_707.checked || check_708.checked || check_709.checked)
+            {
+                if(!controlla_gruppo_checkbox(check_81va)) errori.push("Indicare se il progetto è verificato");
+                if(check_810.checked)
+                {
+                    if(!controlla_gruppo_checkbox(check_81vb)) errori.push("Indicare se il progetto è validato");
+                }
+            }
             if(!controlla_gruppo_checkbox(check_71a)) errori.push("Indicare il livello di progettazione per il quale si farà ricorso al mercato");
             if(!controlla_gruppo_checkbox(check_72w)) errori.push("Specificare se il RUP è stato nominiato");
             if(!controlla_gruppo_checkbox(check_72z)) errori.push("Specificare la disponibilità del bene oggetto dell'intervento");
@@ -10607,6 +10802,14 @@ semestri
             if(check_ec50[2].checked && !controlla_gruppo_checkbox(check_69a)) errori.push("Specificare se in house");
 
             if(!controlla_gruppo_checkbox(check_70x)) errori.push("Specificare stato di avanzamento della programmazione e progettazione");
+            if(check_706.checked || check_707.checked || check_708.checked || check_709.checked)
+            {
+                if(!controlla_gruppo_checkbox(check_81va)) errori.push("Indicare se il progetto è verificato");
+                if(check_810.checked)
+                {
+                    if(!controlla_gruppo_checkbox(check_81vb)) errori.push("Indicare se il progetto è validato");
+                }
+            }
             if(!controlla_gruppo_checkbox(check_71a)) errori.push("Indicare il livello di progettazione per il quale si farà ricorso al mercato");
             if(!controlla_gruppo_checkbox(check_72w)) errori.push("Specificare se il RUP è stato nominiato");
             if(!controlla_gruppo_checkbox(check_72z)) errori.push("Specificare la disponibilità del bene oggetto dell'intervento");
