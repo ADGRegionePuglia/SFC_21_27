@@ -10979,11 +10979,17 @@ semestri
         }
     }
 
+    function convertToValidFilename(string) {
+        return (string.replace(/[\/|\\:*?"<>]/g, " "));
+    }
+
     function createFile(stringa){
-      var content = stringa;
-      var file = new File(["\ufeff"+content], 'Export Scheda di Valutazione Intervento SFC 21-27.txt', {type: "text/plain:charset=UTF-8"});
+      let content = stringa;
+      let linea_file = document.getElementById("idLineaDiIntervento").selectedOptions[0].innerText.substr(0,5);
+      let titolo_file = titolo.value;
+      let file = new File(["\ufeff"+content], 'Export Scheda SFC 21-27 - ' + linea_file + ' - ' + convertToValidFilename(titolo_file) + '.txt', {type: "text/plain:charset=UTF-8"});
       url = window.URL.createObjectURL(file);
-      var a = document.createElement("a");
+      let a = document.createElement("a");
       a.style = "display: none";
       a.href = url;
       a.download = file.name;
